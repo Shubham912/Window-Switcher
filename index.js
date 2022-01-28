@@ -4,7 +4,7 @@ const image = document.getElementById("image");
 const tab_switcher = document.getElementById("tab-switcher");
 
 const list = new Linkedlist();
-
+// creating a data array
 const data = [
   {
     title: "Chrome",
@@ -49,9 +49,9 @@ tab_switcher.hidden = true;
 let tabbable = false;
 
 let point, children, offset;
-
+//setting state
 setState();
-
+//adding event listener
 document.addEventListener("keydown", function (e) {
   console.log(e);
   if (e.key === "Control") {
